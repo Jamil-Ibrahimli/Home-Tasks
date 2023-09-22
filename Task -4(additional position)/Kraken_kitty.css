@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Mulish:wght@600&family=Outfit:wght@500&family=Playfair+Display:wght@500&family=Poppins:wght@300;400&family=Quicksand:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eef1f3;
+}
+
+.container {
+  width: 750px;
+  height: 560px;
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  background-color: white;
+  top: 30px;
+  left: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.main {
+  width: 380px;
+  height: 250px;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  padding: 2px;
+}
+
+.buttons {
+  width: 380px;
+  height: 200px;
+  /* border: 1px solid blue; */
+  position: absolute;
+  bottom: 53px;
+  right: 80px;
+}
+
+.image {
+  width: 180px;
+  height: auto;
+  position: absolute;
+  top: 60px;
+  left: 70px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.free_shipping {
+  background-color: rgba(10, 29, 92, 0.89);
+  color: white;
+  border-radius: 15px;
+  display: inline-block;
+  width: 95px;
+  height: 23px;
+  font-size: 12px;
+  padding: 3px 6px 3px 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin: 10px 0 15px 0;
+  color: rgb(10, 29, 92);
+  font-weight: bold;
+}
+.price_deleted {
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 10px;
+  color: rgba(12, 32, 95, 0.884);
+  font-weight: bolder;
+}
+
+.price_curent {
+  font-size: 40px;
+  font-family: 'News Cycle', sans-serif;
+  font-weight: bold;
+  color: rgba(9, 22, 66, 0.897);
+  line-height: 1.5;
+}
+
+.offer_valid {
+  font-size: 12px;
+  color: #90919b;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+.main_button {
+  width: 380px;
+  height: 55px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: rgba(7, 95, 226, 0.712) 0px 2px 4px,
+    rgba(9, 59, 224, 0.575) 0px 7px 13px -50px,
+    rgba(10, 78, 226, 0.63) 0px -5px 0px inset;
+  background-color: #5094d4;
+  color: white;
+  font-size: 15px;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 2px;
+  background-color: rgb(25, 212, 135);
+  margin: 0 8px 0 0;
+}
+
+.stock {
+  font-size: 12px;
+  font-weight: bolder;
+  font-family: "Fira Sans", sans-serif;
+  margin: 30px 0 30px 0;
+  color: rgba(6, 16, 51, 0.897);
+}
+
+.scale_button {
+  width: 180px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 6px;
+  border: none;
+  border: 2px solid #c3c3c7a8;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: rgb(10, 29, 92);
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.heart_button {
+  width: 180px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  left: 200px;
+  bottom: 50px;
+  border-radius: 6px;
+  border: 2px solid #c3c3c7a8;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: rgb(10, 29, 92);
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.buttons_scale_icon {
+  font-size: 21px;
+  margin: 0 10px;
+  font-weight: lighter;
+}
+
+.buttons_heart_icon {
+  font-size: 21px;
+  margin: 0 10px;
+  font-weight: lighter;
+}
