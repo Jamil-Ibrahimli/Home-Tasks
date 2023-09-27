@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Commissioner:wght@500&family=Fira+Sans&family=Inclusive+Sans&family=Inter:wght@500&family=Manrope:wght@400;700&family=Mulish:wght@600&family=News+Cycle:wght@700&family=Outfit:wght@500&family=Playfair+Display:wght@500&family=Poppins:wght@300;400&family=Quicksand:wght@300&family=Staatliches&family=Work+Sans:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --HEADER-- */
+
+header {
+  width: 100%;
+  height: 60px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-family: "Manrope", sans-serif;
+ position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+  ul{
+  width: 393px;
+  height: 24px;
+  display: flex;
+  list-style: none;
+ 
+  font-size: 14px;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+}
+
+.nav_list_item a{color:rgb(58, 57, 57);
+  text-decoration: none;}
+
+.logo {
+  font-size: 20px;
+  color: #31134d;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 10px 50px;
+}
+
+.header_button_box button {
+  border: none;
+  font-family: "Manrope", sans-serif;
+  border-radius: 4px;
+  padding: 8px 16px;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #1b9e4b;
+  color: white;
+}
+
+/* --MAIN--*/
+
+main {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+/* This is Section -Manage Your Money */
+
+section.Manage_Your_Money {
+  width: 100%;
+  height: 450px;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 52;
+}
+
+div.manage_your_money_box1 {
+  width: 494px;
+  height: 288px;
+
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.manage_your_money_text {
+  width: 476px;
+  height: 188px;
+}
+
+div.manage_your_money_text h2 {
+  width: 476px;
+  height: 120px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1f2228;
+  line-height: 60px;
+}
+
+div.manage_your_money_text span {
+  color: #a855f7;
+}
+div.manage_your_money_text p {
+  width: 405px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #292d35;
+}
+
+div.manage_your_money_button button {
+  border-radius: 4px;
+  padding: 12px 40px;
+  font-family: "Manrope", sans-serif;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: #1b9e4b;
+  border: none;
+}
+
+div.manage_your_money_box2 {
+  width: 674px;
+  height: 449px;
+}
+
+/*This is section -Our Services  */
+section.Our_Services {
+  width: 100%;
+  height: 564px;
+  font-family: "Manrope", sans-serif;
+}
+div.our_services_heading_box {
+  width: 100%;
+  height: 96px;
+}
+
+div.our_services_heading_box h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
+  padding: 0 50px;
+}
+
+div.our_services_boxes {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  justify-content: space-between;
+}
+
+div.our_services_boxes div {
+  width: 392px;
+  height: 210px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+div.our_services_box_image {
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.our_services_box_text h4 {
+  font-size: 18px;
+  font-weight: 700px;
+  line-height: 28px;
+  color: #1f2228;
+}
+
+.our_services_box_text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* This is section - "Our Advantages"*/
+
+section.Our_Advantages {
+  width: 100%;
+  height: 536px;
+
+  margin: 135px 0;
+}
+
+div.our_advantages_box_container {
+  max-width: 100%;
+  height: 536px;
+
+  font-family: "Manrope", sans-serif;
+}
+
+div.our_advantages_box_heading {
+  width: 100%;
+  height: 92px;
+  text-align: center;
+}
+
+div.our_advantages_box_heading h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+  color: #000000;
+}
+
+div.our_advantages_box_items {
+  width: 100%;
+  height: 432px;
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.our_advantages_box_item {
+  width: 392px;
+  height: 432px;
+}
+
+div.our_advantages_box_item_image {
+  width: 100%;
+  height: 300px;
+  padding: 0 43px;
+}
+
+div.our_advantages_box_item_image img {
+  width: 300px;
+  height: 300px;
+}
+
+div.our_advantages_box_item_text {
+  width: 100%;
+  height: 132px;
+  color: #14161b;
+  text-align: center;
+  gap: 8;
+  padding: 0 3px;
+}
+
+div.our_advantages_box_item_text h4 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+div.our_advantages_box_item_text p {
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+/* This is Section -"PRICING */
+
+section.Pricing {
+  width: 100%;
+  height: 798px;
+}
+
+div.pricing_container {
+  width: 100%;
+  height: 798px;
+  font-family: "Manrope", sans-serif;
+}
+
+div.pricing_main_heading_box {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+div.pricing_main_heading_box h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 52px;
+  position: relative;
+}
+
+div.pricing_items_box {
+  width: 100%;
+  height: 694px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+div.pricing_item {
+  width: 400px;
+  height: 648px;
+  border: 2px solid #0e4f26;
+  position: relative;
+  padding: 28px 54px;
+}
+
+div.most_popular_item {
+  width: 150px;
+  height: 48px;
+  position: absolute;
+  top: -48px;
+  left: 125px;
+  border: 2px solid #401b63;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  padding: 10px 16px;
+}
+div.most_popular_item p {
+  font-size: 18px;
+  font-weight: 600px;
+  color: #1f2228;
+}
+
+div.pricing_item_text {
+  width: 275px;
+  height: 408px;
+  text-align: center;
+  padding: 0 5px 0 15px;
+}
+
+div.pricing_item_heading h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+div.pricing_item_check_circels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+div.pricing_item_check_circels img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+div.pricing_item_check_circels p {
+  height: 20px;
+  font-weight: 400px;
+}
+
+div.pricing_item_check_circels span {
+  color: #858d9d;
+}
+
+div.pricing_item_price {
+  text-align: center;
+  margin-top: 60px;
+}
+
+div.pricing_item_price h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+div.pricing_item_price span {
+  font-size: 20px;
+  color: #292d35;
+  font-weight: 400;
+}
+
+div.pricing_item_button button {
+  width: 286px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  background-color: #1b9e4b;
+  font-size: 16px;
+  color: #f0f1f3;
+  font-weight: 500;
+  padding: 8px 16px;
+  font-family: "Manrope", sans-serif;
+  margin-top: 30px;
+}
+
+/* This is Section -"Our Experience" */
+section.Our_Experience {
+  width: 100%;
+  height: 184px;
+  margin-top: 120px;
+}
+
+div.our_experience_container {
+  width: 100%;
+  height: 100%;
+background-color: #fef1e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #190c02;
+  font-family: "Manrope", sans-serif;
+}
+
+div.quantity {
+  width: 135px;
+  height: 80px;
+  padding: 0 2px;
+}
+
+div.quantity h2 {
+  font-size: 32px;
+  font-weight: 700px;
+  line-height: 48px;
+}
+
+div.quantity p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
