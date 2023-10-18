@@ -95,7 +95,7 @@ main {
 
 section.corporate_business {
   width: 100%;
-  height: 660px;
+  height: 735px;
   background-color: #155bd5;
   padding: 80px 50px;
 
@@ -405,6 +405,7 @@ section.our_intro_video {
   width: 100%;
   height: 900px;
   padding: 70px 50px;
+  background-color: #ececec;
 }
 
 div.our_intro_video_container {
@@ -1021,6 +1022,7 @@ section.clients {
   width: 100%;
   height: auto;
   padding: 70px 50px;
+  background-color: #ececec;
 }
 
 .clients_container {
@@ -1262,3 +1264,151 @@ div.map {
   padding-top: 15px;
   color: #ffffff;
 }
+
+
+/* This is FOOTER */
+footer {
+  width: 100%;
+  height: 395px;
+  padding: 70px 50px;
+}
+
+.footer_container {
+  width: 100%;
+  height: 195px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_business_logo {
+  width: 380px;
+  height: 195px;
+}
+
+.footer_business_logo {
+  display: grid;
+  font-size: 18px;
+  color: #6d6d6d;
+  align-content: space-between;
+  line-height: 24px;
+}
+
+.footer_business_logo p a {
+  text-decoration: none;
+  color: #155bd5;
+}
+
+
+.footer_navbar {
+  width: 380px;
+  height: 195px;
+  display: flex;
+  padding-right: 30px;
+  justify-content: space-between;
+
+}
+
+.footer_navbar h5 {
+  font-size: 20px;
+  color: #1d1d1d;
+  margin-bottom: 30px;
+}
+
+
+.footer_navbar a {
+  text-decoration: none;
+  color: #6d6d6d;
+  line-height: 36px;
+  font-size: 18px;
+}
+
+
+.footer_navbar ul {
+  list-style-type: none;
+}
+
+.subscribe {
+  width: 380px;
+  height: 195px;
+  padding-left: 100px;
+  display: grid;
+  align-content: space-between;
+  text-align: start;
+}
+
+.subscribe h5 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.subscribe p {
+  font-size: 18px;
+  line-height: 36px;
+  color: #777777;
+}
+
+.input_group {
+  position: relative;
+}
+
+button.input_group_addon {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+  background-color: #155bd5;
+  padding: 12px 10px;
+  top: 8px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.input_group_addon .input_icon {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.input_group input {
+  width: 276px;
+  height: 55px;
+  border-radius: 7px;
+  font-size: 18px;
+  padding: 10px;
+  outline-color: #005cfc;
+  border: 1px solid rgb(212, 212, 212);
+
+}
+
+.down_screen_logo_UI img {
+  width: 250px;
+  height: 76px;
+  position: fixed;
+  z-index: 1;
+  bottom: 10px;
+  transition: all 0.2s linear;
+
+}
+
+.down_screen_logo_UI img:hover {
+  bottom: 15px;
+  transition: all 0.2s linear;
+}
+
+.scroll_up{width:45px;height: 45px;
+background-color: #0985f2;
+position: fixed;
+z-index: 1;
+bottom: 30px;
+right: 30px;
+border-radius: 5px;
+font-size: 14px;
+color: #ffffff;
+text-align: center;
+padding: 15px 0;
+transition: all.2s linear;cursor: pointer;
+}
+
+.scroll_up:hover{bottom: 35px;
+transition: all 0.2s linear;
+background-color: #1d1d1d;}
