@@ -1,0 +1,630 @@
+@import'./mixins';
+@import'./main_colors';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+//<<<<<<<<<<<   FIRST  STARTED FOR DESKTOP >>>>>>>>>>>>>
+
+header {
+    width: 100%;
+    margin-bottom: 5rem;
+    height: auto;
+    padding: 0 6.75rem;
+    background-color: $_main_3 ;
+
+
+
+    .header_container {
+        width: 100%;
+        height: 4.2rem;
+        @include d-flex(flex, _, space-between, center, _);
+
+
+        &_logo {
+            h1 {
+                color: $_main_1;
+                font-size: 1.5rem;
+                line-height: 3.25rem;
+            }
+        }
+
+        &_menu {
+            width: 28.5rem;
+
+
+
+            ul {
+                @include d-flex(flex, _, end, center, 3rem);
+
+                a {
+                    color: $_main_2;
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+
+                a:focus {
+                    border-bottom: 3px solid $_main_2;
+                }
+            }
+        }
+
+        &_buttons {
+            @include d-flex(flex, _, space-between, center, 2rem);
+
+            button {
+                width: 5.5rem;
+                height: 2.8rem;
+                border-radius: 0.5rem;
+                background-color: $_main_1;
+                color: #fff;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+                font-weight: 300;
+                border: none;
+
+
+            }
+
+            button:hover {
+                background-color: #fff;
+                color: $_main_2;
+                border: 1px solid $_main_1;
+            }
+
+            .signup {
+                background-color: #fff;
+                border: 1px solid $_main_1;
+                color: $_main_2;
+                font-weight: 400;
+            }
+
+
+        }
+
+        &_burger-menu {
+            display: none;
+
+
+
+            i {
+                width: 1.75rem;
+                height: 1.75rem;
+
+            }
+        }
+    }
+
+
+}
+
+
+main {
+
+    .recovery {
+        width: 100%;
+        padding: 0 6.75rem;
+        margin-bottom: 5rem;
+
+        &_container {
+          
+            &_heading {
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 500;
+
+                }
+
+                p {
+                    font-size: 1.5;
+                    line-height: 2.3rem;
+                }
+            }
+
+            &_sub-container {
+                @include d-flex(flex, row, space-between, start, 1rem);
+
+                &_info-box {
+
+                    &_image {
+                        img {
+                            margin-bottom: 1rem;
+                            width: 100%;
+
+                        }
+                    }
+
+                    &_text {
+                        text-align: start;
+
+                        &_hidden-heading {
+                            display: none;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                            line-height: 1.7rem
+                        }
+
+                        a {
+                            text-decoration-line: underline;
+                            line-height: 5rem;
+                        }
+
+                        &_span {
+                            @include d-flex(flex, row, space-between, start, 1rem);
+                        }
+                    }
+
+                }
+
+                &_donate-box {
+                    width: 100%;
+                    @include d-flex(flex, column, space-between, _, 12rem);
+
+                    &_index {
+
+                        p {
+                            font-size: 1.7rem;
+                            font-weight: 500;
+
+                            span {
+                                font-size: 1.5rem;
+                                font-weight: 300;
+                            }
+                        }
+
+                        img {
+                            max-width: 100%
+                        }
+
+
+                        .span-box {
+                            @include d-flex(flex, row, space-between, start, 1rem);
+
+                            span {
+                                font-size: 0.7rem;
+                            }
+                        }
+
+                        &_donators {
+
+                            margin-top: 2rem;
+
+
+                            @include d-flex2(flex, wrap, space-between, center, 1rem);
+
+                            img {
+                                max-width: 15rem;
+                                min-width: 4rem;
+                            }
+
+                            button {
+                                padding: 0.5rem 1rem;
+                                border-radius: 8px;
+                                border: 1px solid $_main_1;
+                                background-color: #fff;
+                                color: $_main_1;
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 500;
+                            }
+
+                        }
+                    }
+
+                    &_main-button {
+                        p {
+                            font-size: 0.85rem;
+                        }
+
+                        button {
+                            width: 100%;
+                            padding: 0.75rem 0;
+                            border-radius: 8px;
+                            border: none;
+                            background-color: $_main_1;
+                            color: #fff;
+                            font-family: 'Poppins', sans-serif;
+
+                        }
+
+                        &_hidden-text {
+                            display: none;
+
+                            p {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+
+    .similar {
+        margin-bottom: 5rem;
+        padding: 0 6.75rem;
+
+        &_container {
+
+            &_header {
+                @include d-flex(flex, row, space-between, center, 1rem);
+                margin-bottom: 1rem;
+
+
+                &_heading {
+
+                    h2 {
+                        font-weight: 500;
+                        font-size: 2rem;
+
+                    }
+                }
+
+                &_button {
+
+                    button {
+                        width: 8.25rem;
+                        background-color: #fff;
+                        padding: 0.75rem 1rem;
+                        border-radius: 8px;
+                        border: 1px solid $_main_1;
+                        color: $_main_1;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        font-family: 'Poppins', sans-serif;
+
+
+
+                    }
+                }
+
+            }
+
+            &_items {
+
+                @include d-flex(flex, row, space-between, start, 1rem);
+
+                &_item {
+                    max-width: 30rem;
+                    min-width: 1rem;
+
+                    &_image {
+                        img {
+                            width: 100%;
+
+                        }
+                    }
+
+                    &_index-box {
+                        width: 100%;
+
+
+                        p {
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+
+                            font-size: 1rem;
+
+                            span {
+                                font-size: 0.8rem;
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+
+
+
+
+                }
+            }
+        }
+    }
+
+}
+
+footer {
+    width: 100%;
+    background-color: $_main_3;
+
+
+    .footer_container {
+        padding: 4rem 6.75rem;
+        width: 100%;
+        @include d-flex(flex, row, space-between, end, 3rem);
+
+
+
+
+        &_navbars {
+            @include grid-columns-rows(grid, repeat(1, 1fr)/repeat(3, 1fr), 4rem);
+
+            ul {
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    color: #1D2939;
+                    line-height: 2rem;
+                }
+            }
+        }
+
+        &_email {
+            text-align: end;
+            padding-top: 2rem;
+            @include d-flex(flex, row, center, center, 1rem);
+
+
+            input {
+                width: 15rem;
+                height: 3rem;
+                border-radius: 8px;
+                padding: 0 1rem;
+
+            }
+
+            input:focus {
+                outline-color: #f3771e;
+            }
+
+            button {
+                width: 7rem;
+                height: 3rem;
+                border-radius: 8px;
+                background-color: $_main_button;
+                color: #fff;
+                border: none;
+
+
+            }
+        }
+
+
+    }
+
+    .contacts {
+        margin: 0;
+        padding: 1rem 8rem;
+        height: 5rem;
+        @include d-flex(flex, row, space-between, center, _);
+
+        &_copyright {
+
+            span {
+                color: #1D2939;
+                font-size: 1rem;
+            }
+        }
+
+        &_soc-media {
+            text-align: center;
+
+            i {
+                margin: 0 1rem;
+                font-size: 1.5rem;
+                color: $_light;
+            }
+        }
+
+    }
+}
+
+
+// <<<<<<<<  RESPONCIVE FINISHED     >>>>>>>>>>>>>>>>>
+
+// <<<<<<<<  RESPONCIVE STARTED FOR MOBILE      >>>>>>>>>>>>>>>>>>>
+
+@media screen and (max-width: 992px) {
+
+    body,
+    html {
+        font-size: 10px;
+    }
+
+
+    header {
+        padding: 1rem 1.75rem;
+
+        .header_container {
+            &_menu {
+                display: none;
+            }
+
+            &_burger-menu {
+                display: block;
+                font-size: 1.5rem;
+
+            }
+
+            &_buttons {
+                display: none;
+            }
+        }
+    }
+
+
+
+
+
+
+    main {
+        .recovery {
+            padding: 1rem 1.75rem;
+
+            &_container {
+                &_heading {
+                    display: none;
+
+                }
+
+                &_sub-container {
+                    display: block;
+
+                    &_info-box {
+
+                        &_text {
+                            text-align: start;
+
+                            &_hidden-heading {
+                                display: block;
+
+                            }
+
+                            p {
+                                display: none;
+                            }
+
+                            a {
+                                display: none;
+                            }
+
+                            &_span {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &_donate-box {
+                        gap: 1rem;
+
+                        &_main-button {
+
+                            button {
+                                border-radius: 4px;
+                                margin-bottom: 2rem;
+                            }
+
+                            &_hidden-text {
+                                display: block;
+
+                                a {
+                                    line-height: 2rem;
+                                    color: #000000
+                                }
+
+                                ;
+
+                                &_span {
+                                    line-height: 3rem;
+                                    @include d-flex(flex, row, space-between, center, _);
+
+                                }
+
+
+
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .similar {
+            padding: 1rem 1.75rem;
+
+            &_container {
+                &_header {
+                    &_heading {
+                        h2 {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+
+                }
+
+                &_items {
+                    &_item:nth-child(3) {
+                        display: none;
+
+                    }
+
+                    &_item:nth-child(4) {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    footer {
+        hr {
+            display: none;
+        }
+
+        .footer_container {
+            padding: 1rem 1.75rem;
+            @include d-flex(block, column, space-between, center, _);
+
+            &_navbars {
+                @include grid-columns-rows(grid, repeat(2, 1fr)/repeat(2, 1fr), 1rem);
+            }
+
+            &_email {
+                @include d-flex(flex, column, center, center, 1rem);
+
+                input {
+                    width: 100%;
+                }
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+
+        hr {
+            display: none;
+        }
+
+        .contacts {
+            height: min-content;
+            margin-top: 2rem;
+            @include d-flex(flex, column-reverse, space-evenly, center, 2rem);
+
+
+
+            &_copyright {
+                @include d-flex(flex, column-reverse, space-evenly, center, 1.5rem);
+                font-weight: bolder;
+            }
+        }
+
+    }
+
+}

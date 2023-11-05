@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  padding-left: 6.75rem;
+  background-color: #E4F4F7;
+}
+header .header_container {
+  width: 100%;
+  height: 4.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: _;
+}
+header .header_container_logo h1 {
+  color: #2A5054;
+  font-size: 1.5rem;
+  line-height: 3.25rem;
+}
+
+main .join-us {
+  width: 100%;
+  padding-left: 6.75rem;
+}
+main .join-us_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 5.6rem;
+}
+main .join-us_container_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+}
+main .join-us_container_form_heading h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+main .join-us_container_form_inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.5rem;
+}
+main .join-us_container_form_inputs .input {
+  position: relative;
+}
+main .join-us_container_form_inputs .input input {
+  width: 24.5rem;
+  height: 3.25rem;
+  padding: 0.75rem 1.25rem;
+  color: #858D9D;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #98A2B3;
+}
+main .join-us_container_form_inputs .input img.eye {
+  position: absolute;
+  right: 1rem;
+  top: 0.8rem;
+}
+main .join-us_container_form_inputs p {
+  font-size: 0.9rem;
+  color: #667085;
+  font-weight: 300;
+}
+main .join-us_container_form_account {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+main .join-us_container_form_account button {
+  width: 24.5rem;
+  height: 3.25rem;
+  padding: 0.75rem 1.25rem;
+  color: #858D9D;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: 1px solid #98A2B3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+main .join-us_container_form_account .create {
+  background-color: #2A5054;
+  color: #fff;
+}
+main .join-us_container_form_account .facebook {
+  background-color: #0C63D4;
+  color: #fff;
+}
+main .join-us_container_form_account p {
+  font-size: 0.9rem;
+  color: #000;
+  font-weight: 300;
+}
+main .join-us_container_form_account p span {
+  font-weight: 600;
+}
+main .join-us_container_banner {
+  width: 44.5rem;
+  height: 65rem;
+  background-image: url("../images/Playing-cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #E4F4F7;
+}
+footer .footer_container {
+  padding: 4rem 6.75rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  gap: 3rem;
+}
+footer .footer_container_navbars {
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(3, 1fr);
+  gap: 4rem;
+}
+footer .footer_container_navbars ul h2 {
+  font-size: 1.5rem;
+}
+footer .footer_container_navbars ul a {
+  color: #1D2939;
+  line-height: 2rem;
+}
+footer .footer_container_email {
+  text-align: end;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer .footer_container_email input {
+  width: 15rem;
+  height: 3rem;
+  border-radius: 8px;
+  padding: 0 1rem;
+  border: 1px solid gray;
+}
+footer .footer_container_email input:focus {
+  outline-color: #f3771e;
+}
+footer .footer_container_email button {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 8px;
+  background-color: #FA8F45;
+  color: #fff;
+  border: none;
+}
+footer .contacts {
+  margin: 0;
+  padding: 1rem 8rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: _;
+}
+footer .contacts_copyright span {
+  color: #1D2939;
+  font-size: 1rem;
+}
+footer .contacts_soc-media {
+  text-align: center;
+}
+footer .contacts_soc-media i {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: #98A2B3;
+}
+
+@media screen and (max-width: 1200px) {
+  body, html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 992px) {
+  body,
+  html {
+    font-size: 10px;
+  }
+  header {
+    padding: 1rem 1.75rem;
+  }
+  main .join-us {
+    padding: 1rem 1.75rem;
+  }
+  main .join-us_container {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: _;
+  }
+  main .join-us_container_banner {
+    display: none;
+  }
+  main .join-us_container_form .input input {
+    border-radius: 2px;
+  }
+  main .join-us_container_form_account button {
+    border-radius: 2px;
+  }
+  footer hr {
+    display: none;
+  }
+  footer .footer_container {
+    padding: 1rem 1.75rem;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: _;
+  }
+  footer .footer_container_navbars {
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+    gap: 1rem;
+  }
+  footer .footer_container_email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  footer .footer_container_email input {
+    width: 100%;
+  }
+  footer .footer_container_email button {
+    width: 100%;
+  }
+  footer hr {
+    display: none;
+  }
+  footer .contacts {
+    height: -moz-min-content;
+    height: min-content;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+  }
+  footer .contacts_copyright {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: bolder;
+  }
+}/*# sourceMappingURL=last.css.map */

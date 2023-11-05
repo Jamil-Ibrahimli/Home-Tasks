@@ -1,0 +1,368 @@
+@import'./mixins';
+@import'./main_colors';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+//  <<<<<<<<<<<<  RESPONCIVE STARTED FOR DESKTOP  >>>>>>>>>>>>>
+
+
+header {
+    width: 100%;
+
+    height: auto;
+    padding-left: 6.75rem;
+    background-color: $_main_3 ;
+
+
+
+    .header_container {
+        width: 100%;
+        height: 4.2rem;
+        @include d-flex(flex, row, space-between, center, _);
+
+
+        &_logo {
+            h1 {
+                color: $_main_1;
+                font-size: 1.5rem;
+                line-height: 3.25rem;
+            }
+        }
+    }
+}
+
+main {
+
+    .join-us {
+        width: 100%;
+        padding-left: 6.75rem;
+
+        &_container {
+            width: 100%;
+            @include d-flex(flex, row, space-between, center, 1rem);
+            padding-left: 5.6rem;
+
+            &_form {
+                @include d-flex(flex, column, space-between, start, 2rem);
+
+                &_heading {
+                    h2 {
+                        font-size: 2rem;
+                        font-weight: 500;
+
+                    }
+
+                }
+
+                &_inputs {
+                    @include d-flex(flex, column, space-between, start, 1.5rem);
+
+                    .input {
+                        input {
+                            width: 24.5rem;
+                            height: 3.25rem;
+                            padding: 0.75rem 1.25rem;
+                            color: #858D9D;
+                            border-radius: 8px;
+                            font-size: 1.2rem;
+                            font-family: 'Poppins', sans-serif;
+                            border: 1px solid $_light;
+                        }
+
+                        position: relative;
+
+                        img.eye {
+                            position: absolute;
+                            right: 1rem;
+                            top: 0.8rem;
+                        }
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                        color: #667085;
+                        font-weight: 300;
+                    }
+
+                }
+
+                &_account {
+                    margin-bottom: 5rem;
+                    @include d-flex(flex, column, space-between, center, 1.5rem);
+
+                    button {
+
+                        width: 24.5rem;
+                        height: 3.25rem;
+                        padding: 0.75rem 1.25rem;
+                        color: #858D9D;
+                        border-radius: 8px;
+                        font-size: 1.2rem;
+                        border: 1px solid $_light;
+                        @include d-flex(flex, row, center, center, 1rem);
+                        font-family: 'Poppins', sans-serif;
+
+                    }
+
+                    .create {
+                        background-color: $_main_1 ;
+                        color: #fff;
+                    }
+
+                    .facebook {
+                        background-color: #0C63D4;
+                        color: #fff;
+                    }
+
+
+
+                    p {
+                        font-size: 0.9rem;
+                        color: #000;
+                        font-weight: 300;
+
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+            }
+
+            &_banner {width:44.5rem;
+                height: 65rem;
+                
+                background-image: url('../images/Playing-cat.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+               
+
+            }
+
+        }
+
+    }
+
+}
+
+footer {
+    width: 100%;
+    background-color: $_main_3;
+
+
+    .footer_container {
+        padding: 4rem 6.75rem;
+        width: 100%;
+        @include d-flex(flex, row, space-between, end, 3rem);
+
+
+
+
+        &_navbars {
+            @include grid-columns-rows(grid, repeat(1, 1fr)/repeat(3, 1fr), 4rem);
+
+            ul {
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    color: #1D2939;
+                    line-height: 2rem;
+                }
+            }
+        }
+
+        &_email {
+            text-align: end;
+            padding-top: 2rem;
+            @include d-flex(flex, row, center, center, 1rem);
+
+
+            input {
+                width: 15rem;
+                height: 3rem;
+                border-radius: 8px;
+                padding: 0 1rem;
+                border: 1px solid gray;
+
+
+
+            }
+
+            input:focus {
+                outline-color: #f3771e;
+            }
+
+            button {
+                width: 7rem;
+                height: 3rem;
+                border-radius: 8px;
+                background-color: $_main_button;
+                color: #fff;
+                border: none;
+
+
+            }
+        }
+
+
+    }
+
+    .contacts {
+        margin: 0;
+        padding: 1rem 8rem;
+        height: 5rem;
+        @include d-flex(flex, row, space-between, center, _);
+
+        &_copyright {
+
+            span {
+                color: #1D2939;
+                font-size: 1rem;
+            }
+        }
+
+        &_soc-media {
+            text-align: center;
+
+            i {
+                margin: 0 1rem;
+                font-size: 1.5rem;
+                color: $_light;
+            }
+        }
+
+    }
+}
+// <<<<<<  RESPONCIVE FINISHED >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+// <<<<<<    RESPONCIVE STARTED  FOR LAP-TOP   >>>>>>>>>>>>>>>>>>
+
+@media screen and (max-width: 1200px){body,html{font-size: 13px;}}
+
+// <<<<<<<   RESPONCIVE FINISHED >>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+// <<<<<<<<  RESPONCIVE STARTED FOR TABLET AND MOBILE >>>>>>>>>>>>>>>
+
+@media screen and (max-width: 992px) {
+
+    body,
+    html {
+        font-size: 10px;
+    }
+
+
+    header {
+        padding: 1rem 1.75rem;
+
+
+    }
+
+
+    main {
+        .join-us {
+            padding: 1rem 1.75rem;
+
+            &_container {
+                padding: 0;
+
+                @include d-flex(flex, row, center, center, _);
+
+
+                &_banner {
+                    display: none;
+                }
+
+                &_form {
+                    .input {
+                        input {
+                            border-radius: 2px;
+                        
+                        }
+
+                        
+                    }
+
+                    &_account{button{border-radius: 2px;}}
+                }
+
+            }
+
+        }
+    }
+
+
+    footer {
+        hr {
+            display: none;
+        }
+
+        .footer_container {
+            padding: 1rem 1.75rem;
+            @include d-flex(block, column, space-between, center, _);
+
+            &_navbars {
+                @include grid-columns-rows(grid, repeat(2, 1fr)/repeat(2, 1fr), 1rem);
+            }
+
+            &_email {
+                @include d-flex(flex, column, center, center, 1rem);
+
+                input {
+                    width: 100%;
+                }
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+
+        hr {
+            display: none;
+        }
+
+        .contacts {
+            height: min-content;
+            margin-top: 2rem;
+            @include d-flex(flex, column-reverse, space-evenly, center, 2rem);
+
+
+
+            &_copyright {
+                @include d-flex(flex, column-reverse, space-evenly, center, 1.5rem);
+                font-weight: bolder;
+            }
+        }
+
+    }
+}

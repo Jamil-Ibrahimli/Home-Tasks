@@ -1,0 +1,35 @@
+@mixin d-flex($flex,$direct,$justify,$align,$gap){
+    display:$flex;
+    flex-direction: $direct;
+    justify-content: $justify;
+    align-items: $align;
+    gap:$gap;
+}
+
+@mixin d-flex2($flex,$_direction,$wrap,$justify,$align,$gap,){
+    display:$flex;
+    flex-direction: $_direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-content: $align;
+    gap:$gap;
+}
+
+
+@mixin grid-place($grid,$items,$content,$self,$gap){
+
+    display: $grid;
+    place-items: $items;
+    place-content: $content;
+    place-self: $self;
+    gap: $gap;
+}
+
+@mixin grid-columns-rows($grid,$template,$gap){
+
+display: $grid;
+grid-template:$template;
+gap:$gap;
+
+
+}
