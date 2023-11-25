@@ -1,15 +1,25 @@
-"use strict";
+// "use strict";
 
-let oldImage = document.getElementById('image')
+// let oldImage = document.getElementById('image')
 
-let button = document.getElementById('btn')
+// let button = document.getElementById('btn')
 
-function changeImage (){
+// let arrImages = [" ","Small dog.jpg","business.png","pan.png","bird.png"]
 
-oldImage.src="Small dog.jpg"
+// let incrElement = 0
+// function changeImage (){
 
-}
-button.addEventListener('click',changeImage)
+// incrElement++
+
+// oldImage.src=arrImages[incrElement];
+// if(incrElement>=arrImages.length-1){
+
+//     incrElement = 0
+   
+// }
+
+// }
+// button.addEventListener('click',changeImage)
 
 
 
