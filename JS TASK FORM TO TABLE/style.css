@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Commissioner:wght@500&family=Fira+Sans&family=Inclusive+Sans&family=Inter&family=Lato&family=Manrope:wght@300&family=Mulish:wght@600&family=News+Cycle:wght@700&family=Nunito&family=Outfit:wght@500&family=Playfair+Display:wght@500&family=Poppins:wght@300;400;500&family=Quicksand:wght@300&family=Rubik&family=Staatliches&family=Work+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(235, 186, 194);
+    font-family: 'Rubik', sans-serif;
+
+}
+
+
+
+#frm {
+    background-color: aliceblue;
+    position: absolute;
+    left: 5rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.username {
+    padding: 10px;
+    font-size: 1.5rem;
+    outline-color:  rgb(132, 23, 234);
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+.password {
+    padding: 10px;
+    font-size: 1.5rem;
+    outline-color:  rgb(132, 23, 234);
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+.password_info {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+
+}
+
+.message {
+    padding: 10px;
+    font-size: 1.5rem;
+    outline-color: rgb(132, 23, 234);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+.checkbox {
+
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+
+.drop_down{  padding: 10px;
+    font-size: 1.5rem;
+    outline-color:  rgb(132, 23, 234);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid gray;}
+
+/* .remember{
+
+width: ;
+
+} */
+
+.form_buttons {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form_buttons_btn_create {
+    background-color: rgb(132, 23, 234);
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+
+}
+
+.form_buttons_btn_reset {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(132, 23, 234);
+    padding: 0.5rem 2.3rem;
+    font-size: 1rem;
+    color: rgb(132, 23, 234);
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+.tbl {
+    position: absolute;
+    right: 5rem;
+    top: 5rem;
+
+    border: 2px solid black;
+
+}
+
+.tb_head {
+    width: 1rem;
+    border: 2px solid black;
+
+}
+
+td.head {
+    width: 10rem;
+    height: 2rem;
+    text-align: center;
+    border: 2px solid black;
+    font-weight: bolder;
+
+}
+
+.td_number {
+    width: 1rem;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+.td1,
+.td2,
+.td3,
+.td4 {
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    border: 1px solid black;
+}

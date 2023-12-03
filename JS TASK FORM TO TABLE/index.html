@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <form action="" id="frm" >
+            <label for="username">Username</label>
+            <input type="text" id="username" class="username" placeholder="Enter username" autofocus >
+
+            <label for="password">Password</label>
+            <input type="password" id="password" class="password" placeholder="Enter password"  >
+            <p class="password_info">Your Password is between 8 and 12 characters</p>
+
+            <label for="message">Input Text Label</label>
+            <input type="text" id="message" class="message" placeholder="Enter your message"  >
+
+            <div class="checkbox">
+
+                <input type="checkbox" id="remember" class="remember">
+
+                <label for="remember">Remember me</label>
+            </div>
+
+            <label for="drop_down">Country</label>
+            <select name="country" id="drop_down" class="drop_down" >
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Turkiye">Turkiye</option>
+                <option value="Russia">Russia</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Germany">Germany</option>
+                
+
+            </select>
+
+            <div class="form_buttons">
+                <button type="reset" class="form_buttons_btn_reset">Reset</button>
+                <button type="submit" class="form_buttons_btn_create" >Create</button>
+
+            </div>
+        </form>
+
+
+
+        <table class="tbl">
+
+            <tr>
+                <td class="tb_head">№</td>
+                <td class="head">Username</td>
+                <td class="head">Password</td>
+                <td class="head">Message</td>
+                <td class="head"> Country </td>
+            </tr>
+
+
+            <tr>
+                <td class="td_number"></td>
+                <td class="td1"></td>
+                <td class="td2"></td>
+                <td class="td3"></td>
+                <td class="td4"></td>
+            </tr>
+
+
+        </table>
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
