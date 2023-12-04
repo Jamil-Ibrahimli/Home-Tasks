@@ -12,14 +12,14 @@
 
         <form action="" id="frm" >
             <label for="username">Username</label>
-            <input type="text" id="username" class="username" placeholder="Enter username" autofocus >
+            <input type="text" id="username" class="username" placeholder="Enter username" autofocus autocomplete="off" >
 
             <label for="password">Password</label>
             <input type="password" id="password" class="password" placeholder="Enter password"  >
-            <p class="password_info">Your Password is between 8 and 12 characters</p>
+            <p class="info_pass">Password should be between 8 and 12 characters</p>
 
             <label for="message">Input Text Label</label>
-            <input type="text" id="message" class="message" placeholder="Enter your message"  >
+            <input type="text" id="message" class="message" placeholder="Enter your message"  autocomplete="off">
 
             <div class="checkbox">
 
@@ -29,7 +29,7 @@
             </div>
 
             <label for="drop_down">Country</label>
-            <select name="country" id="drop_down" class="drop_down" >
+            <select name="country" id="drop_down" class="drop_down" required >
                 <option value="Azerbaijan">Azerbaijan</option>
                 <option value="Turkiye">Turkiye</option>
                 <option value="Russia">Russia</option>
@@ -42,7 +42,7 @@
 
             <div class="form_buttons">
                 <button type="reset" class="form_buttons_btn_reset">Reset</button>
-                <button type="submit" class="form_buttons_btn_create" >Create</button>
+                <button type="submit" class="form_buttons_btn_create" disabled  >Create</button>
 
             </div>
         </form>

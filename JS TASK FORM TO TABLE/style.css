@@ -15,7 +15,7 @@ body {
 
 
 #frm {
-    background-color: aliceblue;
+    background-color: rgb(253, 253, 253);
     position: absolute;
     left: 5rem;
     top: 1rem;
@@ -29,7 +29,7 @@ body {
 .username {
     padding: 10px;
     font-size: 1.5rem;
-    outline-color:  rgb(132, 23, 234);
+    outline-color: rgb(132, 23, 234);
     margin-bottom: 2rem;
     border-radius: 8px;
     border: 1px solid gray;
@@ -38,16 +38,35 @@ body {
 .password {
     padding: 10px;
     font-size: 1.5rem;
-    outline-color:  rgb(132, 23, 234);
+    outline-color: rgb(132, 23, 234);
     border-radius: 8px;
     border: 1px solid gray;
+
+
 }
 
-.password_info {
+.pass_active {
+    border: 1px solid rgb(250, 4, 4);
+
+    transition: 0.2s;
+}
+
+
+
+.info_pass {
     font-size: 0.8rem;
     margin-bottom: 1rem;
+    opacity: 0;
+
 
 }
+
+.active2 {
+    transition: 0.2s;
+    color: red;
+    opacity: 1;
+}
+
 
 .message {
     padding: 10px;
@@ -64,22 +83,20 @@ body {
     justify-content: start;
     gap: 1rem;
     margin-bottom: 1rem;
-   
+
 }
 
 
-.drop_down{  padding: 10px;
+.drop_down {
+    padding: 10px;
     font-size: 1.5rem;
-    outline-color:  rgb(132, 23, 234);
+    outline-color: rgb(132, 23, 234);
     margin-bottom: 1rem;
     border-radius: 8px;
-    border: 1px solid gray;}
+    border: 1px solid gray;
+}
 
-/* .remember{
 
-width: ;
-
-} */
 
 .form_buttons {
 
@@ -95,6 +112,12 @@ width: ;
     color: aliceblue;
     border: none;
     border-radius: 8px;
+    transition: 1s;
+}
+
+.btn_active {
+    background-color: rgb(192, 145, 236);
+
 
 }
 
