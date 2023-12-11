@@ -161,34 +161,26 @@
 // 7)Write program that truncates string in a given length: 'Hello world', 5 => 'Hello...'    
 
 
-// let str = "Hello World"
+// const string =  'Hello world';
+
+// let length = 5;
+
+// function  getTrancated(str,length){
 
 
+// let trancated = ''
 
-// function cutString() {
-
-//     let cutted = ' '
-
-//     for (let i = 0; i < str.length; i++) {
-
-//         if (i <= 5) {
-
-//             cutted += str[i]
-
-//         }
-//         else { cutted += "...";
-
-//     break}
-
-
-
-//     }
-
-//     return cutted
+// for(let i =0;i<length;i++){
+// trancated+=str[i]
 
 // }
 
-// console.log(cutString())
+// return trancated+'...'
+
+
+// }
+
+// console.log(getTrancated(string,length))
 
 
 
@@ -197,36 +189,32 @@
 // 8) Write program that truncates string in a given length, but it should not break the word: 'Hello world, nice talking to you', 20 => 'Hello world, nice...' 
 
 
-// let str = 'Hello world, nice talking to you'
+// const string = 'Hello world, nice talking to you';
 
-// let maxLength = Number(prompt("Enter desired length"))
+// let max = 20;
 
-// function catString(x) {
 
-//     let cutted = ' '
+// function getTrancated(str,max){
 
-//     let splitted = str.split(' ');
+// let result = ''
 
-//     for (let i = 0;i<splitted.length;i++){
+// let splitted = str.split(' ')
+// for(let i =0;i<splitted.length;i++){
 
-// if(cutted.length+splitted[i].length<x){
+//   if(result.length+splitted[i].length<max){
 
-// cutted += splitted[i]+' ';
 
-// }
-// else{ cutted+='...';
-// break;
+//   result+=" "+splitted[i]
 
-// }
-//     }
-
-// return cutted
+//   }  
+//   else{ break}
 
 // }
 
+// return result.trim()+"..."
+// }
 
-// console.log(catString(maxLength))
-
+// console.log(getTrancated(string,max))
 
 
 
@@ -330,6 +318,174 @@
 // }
 
 
-
-
 // console.log(findMin(numbers))
+
+
+
+
+//  13) Create a program to find the second largest number in an array of numbers: [1, 2, 3, 4, 5] => 4   
+
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// function getSecondLargest(arr) {
+//   let s_largest = 0
+//   let  f_largest = 0
+
+//     for (let i = 0; i < arr.length; i++) {
+
+//         if (arr[i] > f_largest) {
+
+//             s_largest=f_largest
+
+//             f_largest = arr[i]
+
+
+//   }
+
+
+// else if( arr[i]>s_largest&&arr[i]<f_largest ){
+
+// s_largest=arr[i]
+
+// }
+
+//     }
+
+//     return s_largest
+
+// }
+
+
+// console.log(getSecondLargest(numbers))
+
+
+
+
+
+
+// 14)
+
+// Create a program to find the second smallest number in an array of numbers: [1, 2, 3, 4, 5] => 2    
+
+// let numbers=[1,2,3,4,5];
+
+
+// function getSecondSmallest(arr){
+
+// let second = arr[1];
+
+// let first = arr[0];
+
+
+// for(let i =0; i<arr.length;i++){
+
+// if(first>arr[i]){
+
+// second=first;
+
+// first=arr[i]
+
+// }else if( arr[i]<second && arr[i]>first){
+
+
+
+//     second = arr[i]
+// }
+
+
+
+// }
+// return second
+
+// }
+
+// console.log(getSecondSmallest(numbers))
+
+
+
+
+
+// 15)Create a program to find the count of each element in an array of numbers: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5] => {1: 2, 2: 2, 3: 2, 4: 2, 5: 2} 
+
+
+// const array = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+
+
+// function getEachCount(arr) {
+//     let obj = {};
+
+//     for (let i of arr){
+
+// if(obj[i]){
+
+
+//     obj[i]+=1
+// }
+// else(obj[i]=1)
+
+
+
+//     }
+
+
+// return obj
+
+// }
+
+// console.log(getEachCount(array))
+
+
+
+
+// 16)Create a program to find the sum of the odd numbers in an array of numbers: [1, 2, 3, 4, 5] => 9
+
+// const array = [1, 2, 3, 4, 5];
+
+// function getOddSum(arr){
+
+//   let result = 0;
+  
+//   for(let i = 0;i<arr.length;i++){
+
+//     if(arr[i]%2===1){
+
+
+//         result+=arr[i]
+
+//     }
+    
+
+//   }
+// return result
+// }
+
+// console.log(getOddSum(array))
+
+
+
+// 17)Create a program to find the sum of the even numbers in an array of numbers: [1, 2, 3, 4, 5] => 6
+
+// const array = [1, 2, 3, 4, 5] 
+
+// function getEvenSum (arr){
+
+// let result =0
+
+// for(let i = 0;i<arr.length;i++){
+
+// if(arr[i]%2===0){
+
+// result+=arr[i]
+
+
+// }
+
+
+// }
+// return result
+
+// }
+
+
+// console.log(getEvenSum(array))
