@@ -1,0 +1,42 @@
+
+
+.footer {
+    text-align: center;
+    background-color: black;
+    padding: 0.5rem;
+    margin-top: 2rem;
+
+}
+
+.footer_container {
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_container_nav_list {
+    text-align: start;
+    color: white;
+    font-size: 1rem;
+    display: grid;
+    gap: 0.5rem;
+    cursor: pointer;
+
+}
+
+.footer_container_btn {
+
+    width: 12rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.copyright {
+
+    color: white;
+
+}

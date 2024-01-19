@@ -1,0 +1,54 @@
+.header {
+    padding: 1rem 5rem;
+    background-color: rgb(255, 252, 252);
+
+}
+
+.header_container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header_container_logo {
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(33, 34, 34);
+
+}
+
+.header_container_serching input {
+
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(204, 204, 203);
+    padding: 1rem;
+outline-color: blueviolet;
+
+
+}
+
+
+.header_container_nav_list {
+
+    display: flex;
+    gap: 2rem;
+
+
+}
+
+a {
+    font-size: 1.3rem;
+    color: black;
+}
+
+.header_container_card i{
+font-size: 1.5rem;
+color: rgb(196, 3, 3);
+
+}
