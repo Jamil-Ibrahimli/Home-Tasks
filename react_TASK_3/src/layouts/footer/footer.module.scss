@@ -1,0 +1,28 @@
+.footer {
+
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 1rem 8rem;
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+
+    &_menu {
+        text-align: start;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .class {
+        font-size: 0.8rem;
+
+    }
+
+    &_copyright {
+
+        font-size: 0.7rem;
+
+    }
+}
