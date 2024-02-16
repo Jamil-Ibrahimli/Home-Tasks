@@ -6,8 +6,7 @@
     left: 50%;
     top: 18%;
     transform: translate(-50%, 0);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 50px 35px -15px,
-        rgba(0, 0, 0, 0.04) 0px 15px 10px -15px;
+
 
 
 
@@ -26,12 +25,35 @@
 
         }
 
-        .icon {
 
-            color: aliceblue;
-            font-size: 2rem;
+        .icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            transition: 0.3s;
+
+            .icon_light {
+
+                color: rgb(234, 167, 10);
+                font-size: 1.5rem;
+
+
+            }
+
+            .icon_dark {
+
+                color: rgb(255, 255, 255);
+                font-size: 1.5rem;
+
+            }
 
         }
+
+        .icon_active {
+
+            transform: rotate(360deg);
+
+        }
+
     }
 
     .input-container {
@@ -44,7 +66,7 @@
         height: 4rem;
         width: 100%;
         padding: 1.2rem;
-        transition: 0.3s;
+        transition: 0.5s;
 
 
         img {
@@ -60,22 +82,7 @@
     .input-container-dark {
 
         background-color: var(--secondary-color-dark);
-        border-radius: 5px;
-        margin: 2.2rem 0;
-        display: flex;
-        align-items: center;
-        height: 4rem;
-        width: 100%;
-        padding: 1.2rem;
-        transition: 0.3s;
-        img {
 
-            width: 1.3rem;
-            height: 1.3rem;
-
-
-
-        }
 
     }
 
@@ -83,26 +90,27 @@
     &_details {
         background-color: var(--secondary-color-light);
         border-radius: 5px;
-transition: 0.4s;
+        transition: 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 30px;
 
-        p {
-            padding: 0.5rem 1.2rem;
-            color: var(--font-color-dark);
+        &_filter-control {
+            display: flex;
+            justify-content: space-evenly;
+
+            p {
+                padding: 0.5rem 1.2rem;
+                color: var(--font-color-light);
+                cursor: pointer;
+            }
+
+
         }
 
     }
- 
-    .details-dark{ 
-        transition: 0.4s;
-        background-color: var(--primary-color-dark);
-        border-radius: 5px;
 
+    .details-dark {
 
-        p {
-            padding: 0.5rem 1.2rem;
-            color: var(--font-color-dark);
-        }
-
+        background-color: var(--secondary-color-dark);
 
 
     }

@@ -13,16 +13,16 @@ interface inputDataTypes {
 }
 
 
-const Input: React.FC<inputDataTypes> = ({ setInp,onKeyDown }) => {
+const Input: React.FC<inputDataTypes> = ({ setInp, onKeyDown }) => {
 
 
-const{theme}=useContext(ThemeContext)
-console.log(theme)
+  const { theme } = useContext(ThemeContext)
+  console.log(theme)
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
 
     setInp(e.target.value)
-  
+
 
 
   }
@@ -32,7 +32,7 @@ console.log(theme)
     <>
 
 
-      <input className={styles.input} type="text" placeholder='Create a new toto...'  onChange={handleInput} onKeyDown={onKeyDown} />
+      <input className={styles.input} type="text" placeholder='Create a new toto...' onChange={handleInput} onKeyDown={onKeyDown} />
 
 
 

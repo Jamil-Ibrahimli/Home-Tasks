@@ -5,8 +5,9 @@
     align-items: center;
     padding: 0 1.2rem;
     width: 100%;
-    border-bottom: 1px solid rgb(116, 114, 114);   
+    border-bottom: 1px solid rgb(116, 114, 114);
     border-radius: 5px;
+
     img {
 
         max-width: 1.3rem;
@@ -21,14 +22,14 @@
         border: none;
         outline: none;
         transition: 1s;
-        color: rgb(99, 99, 99);
-        background-color:rgba(245, 222, 179, 0) ;
+        color: rgb(112, 112, 112);
+        background-color: rgba(245, 222, 179, 0);
 
     }
 
     .output_active {
         text-decoration: line-through;
-        color: rgba(110, 109, 109, 0.333);
+        color: rgba(114, 114, 114, 0.152);
     }
 
 }

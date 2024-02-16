@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import styles from './outPut.module.scss'
 import img_2 from '../../assets/images/imh2.png'
 import img_3 from '../../assets/images/img_3.png'
+import img_6 from '../../assets/images/img_6.png'
 import classNames from 'classnames'
 import img_4 from '../../assets/images/image_4.png'
+import { ThemeContext } from '../../ThemeContext'
 
 
 interface outPutDataTypes {
@@ -13,30 +15,49 @@ interface outPutDataTypes {
 
 }
 
-const OutPut: React.FC<outPutDataTypes> = ({ outPut,removeItem}) => {
+const OutPut: React.FC<outPutDataTypes> = ({ item, removeItem, mappedOutPut, }) => {
 
-
+  const { theme } = useContext(ThemeContext)
 
   const [isActive, setIsActive] = useState(false)
+
 
   const handleActive = () => {
 
     setIsActive(prev => !prev)
 
+    if (isActive) {
+
+      item.active = true
+
+    } else {
+      item.active = false
+
+    }
+
   }
+
+
+
+
 
 
   return (
     <>
 
       <div className={styles['output-container']}>
-        <img src={isActive ? img_2 : img_3} alt="complete" onClick={handleActive} />
-        <p className={classNames(styles.output, { [styles.output_active]: isActive })}>{outPut}</p>
+        {theme ?
+          <img src={isActive ? img_2 : img_6} alt="complete" onClick={handleActive} /> :
+          <img src={isActive ? img_2 : img_3} alt="complete" onClick={handleActive} />}
+        <p className={classNames(styles.output, { [styles.output_active]: isActive })}>{mappedOutPut}</p>
         <img src={img_4} alt="delete" onClick={removeItem} />
       </div>
 
     </>
   )
+
+
+
 }
 
 export default OutPut

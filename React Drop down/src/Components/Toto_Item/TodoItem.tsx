@@ -3,29 +3,27 @@ import Input from '../Input/Input';
 import OutPut from '../OutPut/OutPut';
 import styles from './toDo.module.scss';
 import img_3 from '../../assets/images/img_3.png';
+import img_6 from '../../assets/images/img_6.png'
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 import { ThemeContext } from '../../ThemeContext';
 import classNames from 'classnames';
 
 const TodoItem = () => {
-
+  const [isActive, setIsActive] = useState(false)
   const useTheme = useContext(ThemeContext)
 
   const { theme, toggleTheme } = useContext(ThemeContext)
 
-  
-  console.log(theme)
   const [inp, setInp] = useState('')
 
   const [outPut, setOutPut] = useState<string[]>([])
 
   const [count, setCount] = useState(0)
 
-
   const handleOutPut = () => {
     setCount(prev => prev + 1)
-    const arrOutPut = [...outPut, { inp: inp, id: count }]
+    const arrOutPut = [...outPut, { inp: inp, id: count, active: true }]
     setOutPut(arrOutPut)
 
   }
@@ -46,7 +44,22 @@ const TodoItem = () => {
     setCount(prev => prev - 1)
 
   }
-  console.log(outPut)
+
+  const filterComplited = () => {
+
+    let complited = outPut.filter((item) => item.active === false)
+
+
+    complited.length > 0 && setOutPut(complited)
+  }
+
+
+  const filterActive = () => {
+
+    let activeTodo = outPut.filter((item) => item.active === true)
+
+    activeTodo.length > 0 && setOutPut(activeTodo)
+  }
 
   return (
 
@@ -57,31 +70,42 @@ const TodoItem = () => {
 
         <div className={styles['item-container_title']}>
           <h2>todo</h2>
-          {theme === 'dark' ?
-            <MdLightMode className={styles.icon} onClick={toggleTheme} /> :
-            <MdDarkMode className={styles.icon} onClick={toggleTheme} />}
+
+          <div className={classNames(styles.icon, { [styles.icon_active]: theme })}>
+
+            {theme === false ?
+
+              <MdDarkMode className={styles.icon_dark} onClick={toggleTheme} /> :
+              <MdLightMode className={styles.icon_light} onClick={toggleTheme} />}
+
+
+          </div>
 
         </div>
 
-        <div className={theme==='light'?styles['input-container']:styles['input-container-dark']}>
+        <div className={classNames(styles['input-container'], { [styles['input-container-dark']]: theme })}>
 
-          <img src={img_3} alt="" />
+          {theme ? <img src={img_6} alt="" /> : <img src={img_3} alt="" />}
           <Input setInp={setInp} onKeyDown={handleKeyDown} />
 
 
         </div>
 
-        <div className={theme==='light'?styles['item-container_details']:styles['details-dark']}>
+        <div className={classNames(styles['item-container_details'], { [styles['details-dark']]: theme })}>
 
 
-          {outPut.map((item, index) => 
+          {outPut.map((item, index) =>
 
-          <OutPut outPut={item.inp} key={item.id} removeItem={() =>
+            <OutPut mappedOutPut={item.inp} item={item} key={item.id} setOutPut={setOutPut} outPut={outPut} removeItem={() =>
 
-           removeItem(index)} />)}
+              removeItem(index)} />)}
 
 
-          <div>{count > 0 ? <p>{count} items left</p> : null}</div>
+          {count > 0 ? <div className={styles['item-container_details_filter-control']}>
+            <p>{count} items left</p>
+            <p onClick={filterComplited}>Complited</p>
+            <p onClick={filterActive}>Active</p>
+          </div> : null}
         </div >
 
 

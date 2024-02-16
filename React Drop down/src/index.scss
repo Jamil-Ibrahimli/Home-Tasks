@@ -8,22 +8,25 @@
 
 
 
-:root{
-
-    --primary-color-light: #fdfdfd;
-    --secondary-color-light: #f9f8f6;
-    --font-color-light: #7c7b7b;
-     --primary-color-dark: #181b2b;
-    --secondary-color-dark: #25273D;
-    --font-color-dark: #818181;
-
-}
-
-
-
-
-
- 
-
-
-
+    :root {
+    
+        --primary-color-light: #fdfdfd;
+        --secondary-color-light: #fbfbfb;
+        --font-color-light: #7c7b7b;
+    
+    }
+    
+    
+    
+    @media(prefers-color-scheme:dark){
+    
+    :root{
+    
+        --primary-color-dark: #181b2b;
+        --secondary-color-dark: #25273D;
+        --font-color-dark: #7b7676ee;
+    
+    }
+    
+    
+    }
